@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">Blog de libros</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4  mb-5">
+            <div class="card bg-black">
+                <a href="@Url.Action("Index","Libros", new{id=1})">
+                    <img src="https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/Harry+Potter+Y+La+Piedra+Filosofal.jpg" class="card-img-top" alt="Libro 1">
+
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Harry Potter y la Piedra Filosofal</h5>
+                    <p class="card-text">Harry Potter y la piedra filosofal es el primer libro de la heptalogía acerca del joven mago Harry Potter, escrita por J.K. Rowling. Salió a la venta el 30 de junio de 1997, y se hizo una película basada en el mismo en 2001.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4  mb-5">
+            <div class="card bg-black">
+               <a href="@Url.Action("Index","Libros", new{id=2})">
+                    <img src="https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/HP+camara.jpg" class="card-img-top" alt="Libro 2">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Harry Potter y la Camara de los Secretos</h5>
+                    <p class="card-text">Harry Potter y la cámara secreta es el segundo libro de la serie Harry Potter escrita por J. K. Rowling. El libro fue lanzado al mercado en 1998, y la película basada en éste salió en el 2002. La película es, probablemente, de la serie, la más fiel al libro, junto a la adaptación cinematográfica de Harry Potter y la piedra filosofal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4  mb-5">
+            <div class="card bg-black">
+                <a href="@Url.Action("Index","Libros", new{id=3})">
+                    <img src="https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/Harry+Potter+Y+El+Prisionero+De+Azkaban.jpg" class="card-img-top" alt="Libro 3">
+               </a>
+                <div class="card-body">
+                    <h5 class="card-title">Harry Potter y el Prisionero de Azkaban</h5>
+                    <p class="card-text">Harry Potter y el prisionero de Azkaban es el tercero de los siete libros escritos de la serie Harry Potter, por J. K. Rowling. Fue publicado el 8 de julio de 1999. La película basada en el libro se estrenó el 4 de junio del 2004, dirigida por el director mexicano Alfonso Cuarón.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4  mb-5">
+            <div class="card bg-black">
+                <a href="@Url.Action("Index","Libros", new{id=4})">
+                    <img src="https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/Harry+Potter+y+el+c%C3%A1liz+de+fuego+ebook+by+J_K.+Rowling+-+Rakuten+Kobo.jpg" class="card-img-top" alt="Libro 3">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Harry Potter y el Caliz de Fuego</h5>
+                    <p class="card-text">Harry Potter y el cáliz de fuego es el cuarto libro de la serie Harry Potter escrito por la autora británica J. K. Rowling. Fue sacado a la venta en el año 2000, y ganó un premio Hugo en el 2001. Rowling, antes de que se saque el libro a la venta, advirtió que uno de los personajes del libro moriría, dejando mucha especulación acerca de quién podría ser.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4  mb-5">
+            <div class="card bg-black">
+                <a href="@Url.Action("Index","Libros", new{id=5})">
+                    <img src="https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/Harry+Potter+y+la+Orden+del+F%C3%A9nix.jpg" class="card-img-top" alt="Libro 3">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Harry Potter y la Orden del Fenix</h5>
+                    <p class="card-text">Harry Potter y la Orden del Fénix es el nombre que lleva el quinto libro de la serie Harry Potter escrita por J. K. Rowling. El libro fue publicado el 21 de junio del 2003 en el Reino Unido, Estados Unidos, Canadá, Australia, entre otros. Vendió casi siete millones de copias entre Estados Unidos y el Reino Unido ese mismo día. Tiene 38 capítulos y 893 páginas siendo el libro mas largo de la serie Harry Potter.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4  mb-5">
+            <div class="card bg-black">
+                 <a href="@Url.Action("Index","Libros", new{id=6})">
+                    <img src="https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/Harry+Potter+and+the+Half-Blood+Prince+(English+Edition).jpg" class="card-img-top" alt="Libro 3">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Harry Potter y el Principe Mestizo</h5>
+                    <p class="card-text">Harry Potter y el misterio del príncipe es el título con que se se publicó en castellano el sexto libro de la serie Harry Potter, escrita por J. K. Rowling. El título original es Harry Potter and the Half-Blood Prince (cuya traducción literal es Harry Potter y el príncipe mestizo). Fue el segundo cambio de título para los libros de la serie. El primer caso ocurrió en Harry Potter y la cámara secreta.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4  mb-5">
+            <div class="card bg-black">
+                <a href="@Url.Action("Index","Libros", new{id=7})">
+                    <img src="https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/Los+Mejores+15+Libros+de+J_+K.+Rowling+_+InfoLibros.jpg" class="card-img-top" alt="Libro 3">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Harry Potter y las Reliquias de la Muerte</h5>
+                    <p class="card-text">Harry Potter y las Reliquias de la Muerte es el séptimo y último libro de la serie de novelas de Harry Potter, escritas por la autora británica J.K. Rowling. El libro se publicó el 21 de julio de 2007, cerrando la serie que empezó diez años antes con la publicación de Harry Potter y la piedra filosofal en 1997. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

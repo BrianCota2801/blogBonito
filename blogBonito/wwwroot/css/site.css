@@ -1,0 +1,21 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url(https://paginabonita.s3.us-east-2.amazonaws.com/Pagina/Fondo.jpg);
+    background-size:cover;
+    color:white;
+}

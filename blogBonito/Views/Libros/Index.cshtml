@@ -1,0 +1,39 @@
+﻿@model Libro
+<div class="container mt-4 bg-light
+    @if(Model!= null)
+    {
+    <div class="row">
+        <div class="row mb-5">
+                <!-- Columna para la imagen del libro -->
+            <div class="col-md-4 mt-5">
+                <img src="@Model.UrlImagen" class="img-fluid" alt="Portada del Libro">
+            </div>
+
+            <!-- Columna para la descripción y reseña -->
+            <div class="col-md-8 mt-5">
+                <h3>Descripción</h3>
+                <p>
+                @if(Model!= null)
+                {
+                    @Model.Descripcion
+
+                }
+                </p>
+
+            </div>
+        </div>
+        <div class="mb-5">
+            <h3>Reseña</h3>
+            <p class="mb-5">
+                @Model.Reseña
+            </p>
+        </div>
+        
+    </div>
+    }
+
+    
+</div>
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+}

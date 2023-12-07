@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Registro</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            margin-top: 50px;
+        }
+
+        #register-form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" style="background-color:slategray">
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-container">
+                <!-- Botón para cambiar entre formularios -->
+                <div class="text-center mb-3">
+                    <button class="btn btn-primary" onclick="toggleForms()">Cambiar a Registro/Login</button>
+                </div>
+
+                <!-- Formulario de Login -->
+                <div id="login-form">
+                    <h2 class="text-center">Iniciar Sesión</h2>
+                    <form action="/login" method="post">
+                        <div class="mb-3">
+                            <label for="login-username" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="login-username" name="username" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="login-password" name="password" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Iniciar Sesión</button>
+                    </form>
+                </div>
+
+                <!-- Formulario de Registro -->
+                <div id="register-form">
+                    <h2 class="text-center">Crear Cuenta</h2>
+                    <form action="/register" method="post">
+                        <div class="mb-3">
+                            <label for="register-username" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="register-username" name="username" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="register-email" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="register-email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="register-password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="register-password" name="password" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="register-password-confirm" class="form-label">Confirmar Contraseña:</label>
+                            <input type="password" class="form-control" id="register-password-confirm" name="password_confirmation" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Registrar</button>
+                    </form>
+                </div>
+                <a href="https://accounts.google.com/o/oauth2/auth?client_id=842436338158-aro8bg6eedvk36rsjc92jjbu0eegb8rp.apps.googleusercontent.com&redirect_uri=google.com&response_type=code&scope=https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&access_type=offline">Iniciar sesión con Google</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleForms() {
+            var loginForm = document.getElementById('login-form');
+            var registerForm = document.getElementById('register-form');
+
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
